@@ -7,17 +7,30 @@
   "description": "A Twitter bot to auto-create Pol.is conversations for each Donald Trump tweet.",
   "main": "app.js",
   "scripts": {
-    "test": "node_modules/.bin/jshint app.js"
+    "postinstall": "typings install",
+    "start": "nodemon src/app.ts",
+    "dev": "nodemon --verbose src/app.ts",
+    "test": "jshint app.js"
   },
   "author": "Patrick Connolly <patrick.c.connolly@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@types/node": "^6.0.57",
+    "bluebird": "^3.4.7",
     "express": "^4.14.0",
+    "http": "0.0.0",
     "lodash": "^4.17.4",
+    "nodemon": "^1.11.0",
+    "request": "^2.79.0",
     "swagger-client": "^2.1.27",
-    "twitter": "^1.7.0"
+    "ts-node": "^2.0.0",
+    "twitter": "^1.7.0",
+    "typescript": "^2.0.0",
+    "typings": "^2.1.0"
   },
   "devDependencies": {
+    "@types/dotenv": "^2.0.19",
+    "dotenv": "^2.0.0",
     "jshint": "^2.9.4"
   }
 }

@@ -1,6 +1,3 @@
 wwwroot/*.js
-.env
-.dev-env
 node_modules
 typings
-.DS_Store

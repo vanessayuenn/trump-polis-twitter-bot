@@ -1,0 +1,11 @@
+{
+  "name": "trump-polis-twitter-bot",
+  "dependencies": {
+    "bluebird": "registry:npm/bluebird#3.4.1+20160909132857",
+    "express": "registry:npm/express#4.14.0+20160925001530",
+    "request": "registry:npm/request#2.69.0+20160428223725"
+  },
+  "globalDependencies": {
+    "node": "registry:dt/node#6.0.0+20170104205751"
+  }
+}
